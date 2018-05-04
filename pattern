@@ -1,0 +1,25 @@
+#Pattern Program
+
+int i, j, k, n=2, x;
+   
+   for (k=1; k<=n; k++) {
+       for (i=1; i<=k+1; i++) {
+           for (j=1; j<=2*n+1; j++) {
+               if(i==k+1){
+                   if(j>=n-i+2 && j<=n+i){
+                        printf("*");
+                   }else{
+                       printf(" ");
+                   }
+               }else {
+                   if(j==n+1){
+                       printf("*");
+                   }else{
+                       printf(" ");
+                   }
+               }
+           }
+           printf("\n");
+       }
+   }
+ 
